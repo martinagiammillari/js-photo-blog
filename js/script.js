@@ -6,8 +6,9 @@ const container = document.getElementById("container");
 const API = "https://lanciweb.github.io/demo/api/pictures/";
 
 axios.get(API).then(function (resp) {
-    const cardArray = resp.data;
+
     // CREARE DINAMICAMENTE LE CARD
+    const cardArray = resp.data;
 
     let cardStr = "";
 
@@ -17,8 +18,8 @@ axios.get(API).then(function (resp) {
                 <img class="pin" src="./img/pin.svg" alt="">
                 <img src="${curCard.url}" alt="${curCard.title}">
                 <div class="card-text">
-                    <p>${curCard.date}<br>
-                    <span>${curCard.title}</span></p>
+                    <p class="date">${curCard.date}</p>
+                    <span>${curCard.title.toUpperCase()}</span>
                 </div>
             </div>
         `;

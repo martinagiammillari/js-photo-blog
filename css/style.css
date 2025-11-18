@@ -15,20 +15,22 @@ img {
 
 .date {
     font-family: "Sometype Mono", monospace;
+    color: grey;
+    font-size: 1.5rem;
 }
 
 
 header {
     background-image: url(../img/wall.png);
-   
+
 
 }
 
 main {
     background-image: url(../img/cork.png);
-     padding-top: 5%;
-     padding-bottom: 5%;
-   
+    padding-top: 5%;
+    padding-bottom: 5%;
+
 }
 
 h1 {
@@ -36,6 +38,13 @@ h1 {
     margin: 25px 0;
     font-family: "Edu TAS Beginner", sans-serif;
 }
+
+span {
+    font-family: "Edu TAS Beginner", sans-serif;
+    font-size: 2.2rem;
+    font-weight: 800;
+}
+
 
 .card {
     background-color: white;
@@ -47,8 +56,8 @@ h1 {
 }
 
 
-.container{
-     gap: 2rem;
+.container {
+    gap: 2rem;
     margin: auto;
 }
 
@@ -81,8 +90,8 @@ h1 {
 
 /* Utilities */
 
-.card p {
-    padding-bottom: 10%;
+.card-text {
+    padding-bottom: 5%;
     padding-top: 10px;
 }
 
