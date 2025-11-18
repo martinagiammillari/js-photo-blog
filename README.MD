@@ -4,6 +4,8 @@ Milestone 1
 
 Sfruttando gli screen e gli asset in allegato riproduciamo la grafica proposta in maniera statica: concentriamoci su HTML e CSS riproducendo una singola fotografia (usiamo una qualunque immagine a piacimento)
 
+
+
 Milestone 2
 
 Utilizzando Postman, testiamo una chiamata a questo endpoint: 
