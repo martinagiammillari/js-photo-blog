@@ -20,25 +20,38 @@ img {
 
 header {
     background-image: url(../img/wall.png);
+   
+
 }
 
 main {
     background-image: url(../img/cork.png);
+     padding-top: 5%;
+     padding-bottom: 5%;
+   
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: 6rem;
     margin: 25px 0;
     font-family: "Edu TAS Beginner", sans-serif;
 }
 
 .card {
-    max-width: 22%;
     background-color: white;
     padding: 20px;
     height: 100%;
     position: relative;
+    max-width: 25%;
+
 }
+
+
+.container{
+     gap: 2rem;
+    margin: auto;
+}
+
 
 /* Layout */
 
@@ -59,16 +72,22 @@ h1 {
     align-items: center;
 }
 
+.wrap {
+    flex-wrap: wrap;
+}
+
+
 
 
 /* Utilities */
 
-.card p{
-    padding: 15px;
+.card p {
+    padding-bottom: 10%;
+    padding-top: 10px;
 }
 
-.pin{
+.pin {
     position: absolute;
-bottom: 96%;
-left: 48%;
+    bottom: 96%;
+    left: 48%;
 }
