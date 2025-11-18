@@ -1,11 +1,11 @@
 /* RESET */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-img{
+img {
     max-width: 100%;
 }
 
@@ -14,25 +14,31 @@ img{
 /* Typography */
 
 .date {
-  font-family: "Sometype Mono", monospace;
+    font-family: "Sometype Mono", monospace;
 }
 
 
-header{
-    background-image:url(../img/wall.png);
+header {
+    background-image: url(../img/wall.png);
 }
 
-main{
+main {
     background-image: url(../img/cork.png);
 }
 
-h1{
+h1 {
     font-size: 5rem;
     margin: 25px 0;
-    font-family:"Edu TAS Beginner", sans-serif;
+    font-family: "Edu TAS Beginner", sans-serif;
 }
 
-
+.card {
+    max-width: 22%;
+    background-color: white;
+    padding: 20px;
+    height: 100%;
+    position: relative;
+}
 
 /* Layout */
 
@@ -41,18 +47,28 @@ h1{
 
 
 /* Flex */
-.flex{
+.flex {
     display: flex;
 }
 
-.justify-content-center{
+.justify-content-center {
     justify-content: center;
 }
 
-.align-items-center{
+.align-items-center {
     align-items: center;
 }
 
+
+
 /* Utilities */
 
+.card p{
+    padding: 15px;
+}
 
+.pin{
+    position: absolute;
+bottom: 96%;
+left: 48%;
+}
