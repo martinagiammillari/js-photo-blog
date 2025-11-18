@@ -14,7 +14,7 @@ axios.get(API).then(function (resp) {
 
     cardArray.forEach(function (curCard) {
         cardStr += `
-            <div class="card">
+            <div class="card rotate">
                 <img class="pin" src="./img/pin.svg" alt="">
                 <img src="${curCard.url}" alt="${curCard.title}">
                 <div class="card-text">

@@ -100,3 +100,15 @@ span {
     bottom: 96%;
     left: 48%;
 }
+
+.rotate:hover{
+    transform: rotate(25deg);
+}
+
+.rotate {
+    transition: transform 0.3s ease;
+}
+
+.rotate:hover .pin {
+    display: none;
+}
