@@ -101,7 +101,7 @@ span {
     left: 48%;
 }
 
-.rotate:hover{
+.rotate:hover {
     transform: rotate(25deg);
 }
 
@@ -111,4 +111,40 @@ span {
 
 .rotate:hover .pin {
     display: none;
+}
+
+
+
+/* RESPONSIVE */
+
+/* Tablet (tra 768px e 1024px) */
+@media (max-width: 1024px) {
+    .card {
+        max-width: 45%;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    span {
+        font-size: 1.8rem;
+    }
+}
+
+
+/* Mobile (meno di 768px) */
+@media (max-width: 768px) {
+    .card {
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    span {
+        font-size: 1.5rem;
+    }
 }
