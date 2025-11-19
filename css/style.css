@@ -85,7 +85,7 @@ span {
     flex-wrap: wrap;
 }
 
-.column{
+.column {
     flex-direction: column;
 }
 
@@ -123,7 +123,12 @@ span {
     inset: 0;
     z-index: 99999;
     background: rgba(0, 0, 0, 0.6);
+    display: none;
 
+}
+
+.overlay.active {
+    display: flex;
 }
 
 
@@ -134,8 +139,8 @@ span {
 }
 
 
-button{
-    margin-bottom: 10%;
+button {
+    margin-bottom: 5%;
 
     padding: 6px 16px;
     background: white;
