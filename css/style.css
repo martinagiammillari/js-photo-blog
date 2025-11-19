@@ -85,6 +85,9 @@ span {
     flex-wrap: wrap;
 }
 
+.column{
+    flex-direction: column;
+}
 
 
 
@@ -97,7 +100,7 @@ span {
 
 .pin {
     position: absolute;
-    bottom: 96%;
+    bottom: 97%;
     left: 48%;
 }
 
@@ -113,6 +116,20 @@ span {
     display: none;
 }
 
+
+
+.overlay{
+    position: fixed;
+    z-index: 99999;
+    left: 38%;
+
+
+}
+
+
+button{
+    margin-bottom: 10%;
+}
 
 
 /* RESPONSIVE */
