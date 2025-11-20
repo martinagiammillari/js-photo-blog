@@ -15,6 +15,8 @@ axios.get(API).then(function (resp) {
     let cardStr = "";
 
     cardArray.forEach(function (curCard) {
+
+        // ogni card con immagine e testo
         cardStr += `
             <div class="card rotate">
                 <img class="pin" src="./img/pin.svg" alt="">
@@ -29,32 +31,43 @@ axios.get(API).then(function (resp) {
 
     // STAMPARE IN PAGINA
     container.innerHTML = cardStr;
-}).catch(function (error) {
-    console.error("Errore nel caricamento delle immagini:", error);
-});
 
 
-// APRI OVERLAY QUANDO CLICCHI UNA FOTO
-
+    // PRENDO TUTTE LE FOTO
     const allPhotos = document.querySelectorAll(".photo");
 
-    // PER OGNI FOTO AGGIUNGO IL CLICK
+    // AGGIUNGO CLICK A OGNI FOTO
     allPhotos.forEach(function (photo) {
 
         photo.addEventListener("click", function () {
 
-            // IMPOSTO L’IMMAGINE NELL’OVERLAY
+            // quando clicco una foto
+            // metto la foto dentro overlay
             overlayImg.src = photo.src;
 
-            // MOSTRO L’OVERLAY
+            // apro overlay
             overlay.classList.add("active");
         });
     });
 
+});
 
 
+// CHIUDERE L'OVERLAY QUANDO SI CLICCA FUORI DALL'IMMAGINE
+overlay.addEventListener("click", function (event) {
 
-// BOTTONE PER CHIUDERE
+    // prendo l'elemento esatto cliccato
+    let elementoCliccato = event.target;
+
+    // se ho cliccato proprio l'overlay (lo sfondo)
+    if (elementoCliccato === overlay) {
+        overlay.classList.remove("active");
+    }
+});
+
+// CHIUDERE L'OVERLAY QUANDO CLICCO IL BOTTONE
 closeBtn.addEventListener("click", function () {
+
+    // tolgo la classe active
     overlay.classList.remove("active");
 });

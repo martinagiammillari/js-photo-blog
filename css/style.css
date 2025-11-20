@@ -19,18 +19,14 @@ img {
     font-size: 1.5rem;
 }
 
-
 header {
     background-image: url(../img/wall.png);
-
-
 }
 
 main {
     background-image: url(../img/cork.png);
     padding-top: 5%;
     padding-bottom: 5%;
-
 }
 
 h1 {
@@ -46,15 +42,28 @@ span {
 }
 
 
+/* CARD */
+
 .card {
     background-color: white;
     padding: 20px;
     height: 100%;
     position: relative;
     max-width: 25%;
-
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
 }
 
+
+
+.card:hover {
+    transform: scale(1.05) rotate(10deg);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.35);
+}
+
+.card:hover .pin {
+    display: none;
+}
 
 .container {
     gap: 2rem;
@@ -104,19 +113,11 @@ span {
     left: 48%;
 }
 
-.rotate:hover {
-    transform: rotate(25deg);
-}
-
-.rotate {
-    transition: transform 0.3s ease;
-}
-
-.rotate:hover .pin {
-    display: none;
-}
 
 
+
+
+/* OVERLAY */
 
 .overlay {
     position: fixed;
@@ -124,24 +125,21 @@ span {
     z-index: 99999;
     background: rgba(0, 0, 0, 0.6);
     display: none;
-
+  
 }
+
 
 .overlay.active {
     display: flex;
 }
-
-
 
 .cur-img {
     max-width: 600px;
     width: 90%;
 }
 
-
 button {
-    margin-bottom: 5%;
-
+    margin-bottom: 10%;
     padding: 6px 16px;
     background: white;
     border: none;
