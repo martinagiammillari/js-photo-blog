@@ -51,7 +51,7 @@ span {
     position: relative;
     max-width: 25%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
+    
 }
 
 
@@ -59,6 +59,7 @@ span {
 .card:hover {
     transform: scale(1.05) rotate(10deg);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.35);
+    cursor: pointer;
 }
 
 .card:hover .pin {

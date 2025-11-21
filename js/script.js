@@ -54,16 +54,10 @@ axios.get(API).then(function (resp) {
 
 
 // CHIUDERE L'OVERLAY QUANDO SI CLICCA FUORI DALL'IMMAGINE
-overlay.addEventListener("click", function (event) {
-
-    // prendo l'elemento esatto cliccato
-    let elementoCliccato = event.target;
-
-    // se ho cliccato proprio l'overlay (lo sfondo)
-    if (elementoCliccato === overlay) {
-        overlay.classList.remove("active");
-    }
+overlay.addEventListener("click", function () {
+    overlay.classList.remove("active");
 });
+
 
 // CHIUDERE L'OVERLAY QUANDO CLICCO IL BOTTONE
 closeBtn.addEventListener("click", function () {
